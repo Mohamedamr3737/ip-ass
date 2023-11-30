@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-commerce website</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+<body>
+    <header class="nbh">
+        <div class="upper-header">
+            <div class="uppar">
+                <p >Free delivery on orders above 50$</p>
+            </div>  
+            <div class="log">
+                <a href="">Login</a>
+                <a href="">Sign Up</a>
+            </div>
+        </div>
+       
+        <nav class="navbar change">
+            <img class="logo" src="./pictures/logo.png" alt="logo">
+            <ul class="nav_links">
+                <li><a href="./index.html" class="hover-underline-animation">Home</a></li>
+                <li><a href="./careers.html" class="hover-underline-animation">Careers</a></li>
+                <li><a href="./media.html" class="hover-underline-animation">Media & News</a></li>
+                <li class="dropdown">
+                    <a href="#" class="hover-underline-animation">▼ About us</a>
+                    <ul class="dropdownMenu">
+                        <li class="drop-options"><a href="#" class="hover-underline-animation">Our story</a></li>
+                        <li class="drop-options"><a href="#" class="hover-underline-animation">Mission</a></li>
+                        <li class="drop-options"><a href="#" class="hover-underline-animation">Vision</a></li>
+                    </ul>
+                </li>
+                <li><i class="bx bx bx-shopping-bag" id="cart-bag"></i><span id="total-items-display" class="cart-number">0</span></li>
+            </ul>
+             <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <div class="cart-content">
+                    
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">0$</div>
+                </div>
+                <button type="button" class="but btn-buy">Buy Now</button>
+                <i class="bx bx-x" id="close-cart"></i>
+             </div>
+        </nav>
+    </header> 
+    <main class="careerspage mainscreen">
+        <div class="containermain">
+            <h1>Careers</h1>
+            <p>⚽ Be one of us ⚽</p>
+            <button class="but" id="Applynow">ِApply now</button>
+        
+    </div>
+    </main>
+    <div class="box">
+
+        <div class="leftcolumn">
+            <div class="imgbox">
+                <div class="uppperimg">
+                    <img src="./pictures/c1.png" alt="avatar">
+                </div>
+                <div class="lowerimg">
+                    <img src="./pictures/c2.png" alt="avatar">
+                </div>
+            </div>
+            
+        </div>
+        <div class="rightcolumn">
+            <label class="formlbl">Application Form</label>
+                <label class="perlbl">Personal Detail</label>
+                <div class="personaldetail">
+                     <div class="twcol">
+                            <div class="left">
+                                <label class="formlbls">Your Name</label>
+                                <input type="text" class="textbox" placeholder=" Enter Full Name">
+                                <label class="formlbls">Gender Type</label>
+                                <select class="textbox">
+                                    <option value=""selected disabled>Select Your Gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </div>
+                            <div class="right">
+                                <label class="formlbls">Your Email Address</label>
+                                <input type="email" class="textbox" placeholder=" m.nawaz123@example.com">
+                                <label class="formlbls">Date of Birth</label>
+                                <input type="date" class="textbox" placeholder=" Select Date">
+                            </div>
+                        </div>
+                      <div class="proposal">
+                        <label class="formlbls">Your proposal</label>
+                      </div>
+                      <textarea class="textarea" rows="10" placeholder=" Write Your Proposal Here..."></textarea>
+                </div>
+                <label class="perlbl">Educational Detail</label>
+                <div class="educationaldetail">
+                    <div class="twcol">
+                        <div class="left">
+                            <label class="formlbls">Educational Level</label>
+                            <input type="text" class="textbox" placeholder=" Your Degree Level">
+                            <label class="formlbls">Job Domain</label>
+                            <select class="textbox">
+                                <option value=""selected disabled>Select Job Type</option>
+                                <option value="job2">Job 1</option>
+                                <option value="job2">Job 2</option>
+                            </select>
+                        </div>
+                        <div class="right">
+                            <label class="formlbls">Your Grade</label>
+                            <input type="email" class="textbox" placeholder=" Type Your GPA">
+                            <label class="formlbls">Experience Level</label>
+                            <select class="textbox">
+                                <option value=""selected disabled>Select Experience Level</option>
+                                <option value="oneyear">1 year</option>
+                                <option value="twoyears">2 years</option>
+                                <option value="threeyearsplus">3 years +</option>
+                            </select>
+                        </div>
+                    </div>
+                  <div class="attach">
+                    <label class="formlbls">Attach resume</label>
+                    <input type="file">
+                  </div>
+                  <div class="attach">
+                    <input type="checkbox" class="terms">
+                  <label class="terms"> I agreed with <a href="#" class="termshyper">Terms & Conditons</a></label>
+                  </div>
+                  <button class="but" id="Applyform">ِApply now</button>
+            </div>
+                </div>
+        </div>
+</div>
+<footer>
+    <!-- <div class="footlogo">
+         <img src="./pictures/logo.png" alt="logo">
+     </div> --> 
+     <div class="footer-icons">
+ 
+         <i class='bx bxl-facebook-circle' id="ficon"></i>
+         <i class='bx bxl-instagram-alt' id="ficon"></i>
+         <i class='bx bxl-snapchat' id="ficon"></i>
+         <i class='bx bxl-twitter' id="ficon"></i>
+         <i class='bx bxl-tiktok' id="ficon"></i>
+     </div>
+     <div class="footer-menu">
+         <ul class="footer-links">
+             <li><a href="#">Home</a></li>
+             <li><a href="#">Products</a></li>
+             <li><a href="#">Careers</a></li>
+             <li><a href="#">Media & News</a></li>
+             <li><a href="#">About us</a></li>
+             <li><a href="#">Our story</a></li>
+             <li><a href="#">Mission</a></li>
+             <li><a href="#">Vision</a></li>
+         </ul>
+     </div>
+    </footer>
+    <script src="./js/java.js"></script>
+</body>
+</html>

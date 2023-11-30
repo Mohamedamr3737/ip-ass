@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce website</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Header -->
+    <header class="nbh">
+        <div class="upper-header">
+            <div class="uppar">
+                <p >Free delivery on orders above 50$</p>
+            </div>  
+            <div class="log">
+                <a href="">Login</a>
+                <a href="">Sign Up</a>
+            </div>
+        </div>
+        <nav class="navbar change">
+            <img class="logo" src="./pictures/logo.png" alt="logo">
+            <ul class="nav_links">
+                <li><a href="#" class="hover-underline-animation">Home</a></li>
+                <li><a href="./careers.html" class="hover-underline-animation">Careers</a></li>
+                <li><a href="./media.html" class="hover-underline-animation">Media & News</a></li>
+                <li class="dropdown">
+                    <a href="#" class="hover-underline-animation">▼ About us</a>
+                    <ul class="dropdownMenu">
+                        <li class="drop-options"><a href="#" class="hover-underline-animation">Our story</a></li>
+                        <li class="drop-options"><a href="#" class="hover-underline-animation">Mission</a></li>
+                        <li class="drop-options"><a href="#" class="hover-underline-animation">Vision</a></li>
+                    </ul>
+                </li>
+                <li><i class="bx bx bx-shopping-bag" id="cart-bag"></i><span id="total-items-display" class="cart-number">0</span></li>
+            </ul>
+             <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <div class="cart-content">
+                    
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">0$</div>
+                </div>
+                <button type="button" class="but btn-buy">Buy Now</button>
+                <i class="bx bx-x" id="close-cart"></i>
+             </div>
+        </nav>
+    </header> 
+   <main class="mainscreen">
+    <div class="containermain">
+            <h1>Welcome to Footstore</h1>
+            <p>⚡ Feel the power ⚡</p>
+            <button class="but" id="shopnow">Shop now</button>
+        
+    </div>
+   </main>
+   <section class="shop">
+    <div class="productbox">
+        <img src="./pictures/p1.avif" alt="" class="product-image">
+        <h2 class="product-title">Football</h2>
+        <span class="price">100$</span>
+        <i class="bx bx-shopping-bag add-cart"></i>
+    </div>
+    <div class="productbox">
+        <img src="./pictures/p2.avif" alt="" class="product-image">
+        <h2 class="product-title">Copa predator boots</h2>
+        <span class="price">150$</span>
+        <i class="bx bx-shopping-bag add-cart"></i>
+    </div>
+    <div class="productbox">
+        <img src="./pictures/p3.avif" alt="" class="product-image">
+        <h2 class="product-title">Air pump</h2>
+        <span class="price">70$</span>
+        <i class="bx bx-shopping-bag add-cart"></i>
+    </div>
+    <div class="productbox">
+        <img src="./pictures/p4.avif" alt="" class="product-image">
+        <h2 class="product-title">Copa pure turf boots</h2>
+        <span class="price">250$</span>
+        <i class="bx bx-shopping-bag add-cart"></i>
+    </div>
+    <div class="productbox">
+        <img src="./pictures/p5.avif" alt="" class="product-image">
+        <h2 class="product-title">MANCHESTER UNITED JACKET</h2>
+        <span class="price">200$</span>
+        <i class="bx bx-shopping-bag add-cart"></i>
+    </div>
+    <div class="productbox">
+        <img src="./pictures/p6.avif" alt="" class="product-image">
+        <h2 class="product-title">Black JACKET</h2>
+        <span class="price">170$</span>
+        <i class="bx bx-shopping-bag add-cart"></i>
+    </div>
+
+   </section>
+   <footer>
+   <!-- <div class="footlogo">
+        <img src="./pictures/logo.png" alt="logo">
+    </div> --> 
+    <div class="footer-icons">
+
+        <i class='bx bxl-facebook-circle' id="ficon"></i>
+        <i class='bx bxl-instagram-alt' id="ficon"></i>
+        <i class='bx bxl-snapchat' id="ficon"></i>
+        <i class='bx bxl-twitter' id="ficon"></i>
+        <i class='bx bxl-tiktok' id="ficon"></i>
+    </div>
+    <div class="footer-menu">
+        <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Media & News</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Our story</a></li>
+            <li><a href="#">Mission</a></li>
+            <li><a href="#">Vision</a></li>
+        </ul>
+    </div>
+   </footer>
+   <script src="./js/java.js" ></script>
+</body>
+</html
