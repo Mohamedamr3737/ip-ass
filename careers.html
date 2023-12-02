@@ -8,7 +8,12 @@
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
 <body>
+    <!-- Header -->
     <header class="nbh">
+        <div class="random">
+            <button style="margin-right: 1%;"  onclick="generateRandomColor()">Generate Random Color</button>
+            <p id="randomColor">Random Color: #000000<p>
+        </div>
         <div class="upper-header">
             <div class="uppar">
                 <p >Free delivery on orders above 50$</p>
@@ -18,7 +23,6 @@
                 <a href="">Sign Up</a>
             </div>
         </div>
-       
         <nav class="navbar change">
             <img class="logo" src="./pictures/logo.png" alt="logo">
             <ul class="nav_links">
@@ -26,11 +30,11 @@
                 <li><a href="./careers.html" class="hover-underline-animation">Careers</a></li>
                 <li><a href="./media.html" class="hover-underline-animation">Media & News</a></li>
                 <li class="dropdown">
-                    <a href="#" class="hover-underline-animation">▼ About us</a>
+                    <a href="./aboutus.html" class="hover-underline-animation">▼ About us</a>
                     <ul class="dropdownMenu">
-                        <li class="drop-options"><a href="#" class="hover-underline-animation">Our story</a></li>
-                        <li class="drop-options"><a href="#" class="hover-underline-animation">Mission</a></li>
-                        <li class="drop-options"><a href="#" class="hover-underline-animation">Vision</a></li>
+                        <li class="drop-options"><a href="./ourstory.html" class="hover-underline-animation">Our story</a></li>
+                        <li class="drop-options"><a href="./mission.html" class="hover-underline-animation">Mission</a></li>
+                        <li class="drop-options"><a href="./vision.html" class="hover-underline-animation">Vision</a></li>
                     </ul>
                 </li>
                 <li><i class="bx bx bx-shopping-bag" id="cart-bag"></i><span id="total-items-display" class="cart-number">0</span></li>
@@ -53,11 +57,11 @@
         <div class="containermain">
             <h1>Careers</h1>
             <p>⚽ Be one of us ⚽</p>
-            <button class="but" id="Applynow">ِApply now</button>
+            <button class="but" id="applynow">ِApply now</button>
         
     </div>
     </main>
-    <div class="box">
+    <div class="box" id="formstart">
 
         <div class="leftcolumn">
             <div class="imgbox">
@@ -136,30 +140,26 @@
         </div>
 </div>
 <footer>
-    <!-- <div class="footlogo">
-         <img src="./pictures/logo.png" alt="logo">
-     </div> --> 
-     <div class="footer-icons">
- 
-         <i class='bx bxl-facebook-circle' id="ficon"></i>
-         <i class='bx bxl-instagram-alt' id="ficon"></i>
-         <i class='bx bxl-snapchat' id="ficon"></i>
-         <i class='bx bxl-twitter' id="ficon"></i>
-         <i class='bx bxl-tiktok' id="ficon"></i>
-     </div>
-     <div class="footer-menu">
-         <ul class="footer-links">
-             <li><a href="#">Home</a></li>
-             <li><a href="#">Products</a></li>
-             <li><a href="#">Careers</a></li>
-             <li><a href="#">Media & News</a></li>
-             <li><a href="#">About us</a></li>
-             <li><a href="#">Our story</a></li>
-             <li><a href="#">Mission</a></li>
-             <li><a href="#">Vision</a></li>
-         </ul>
-     </div>
-    </footer>
+    <div class="footer-icons">
+
+        <i class='bx bxl-facebook-circle' id="ficon"></i>
+        <i class='bx bxl-instagram-alt' id="ficon"></i>
+        <i class='bx bxl-snapchat' id="ficon"></i>
+        <i class='bx bxl-twitter' id="ficon"></i>
+        <i class='bx bxl-tiktok' id="ficon"></i>
+    </div>
+    <div class="footer-menu">
+        <ul class="footer-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./careers.html">Careers</a></li>
+            <li><a href="./media.html">Media & News</a></li>
+            <li><a href="./aboutus.html">About us</a></li>
+            <li><a href="./ourstory.html">Our story</a></li>
+            <li><a href="./mission.html">Mission</a></li>
+            <li><a href="./vision.html">Vision</a></li>
+        </ul>
+    </div>
+   </footer>
     <script src="./js/java.js"></script>
 </body>
 </html>

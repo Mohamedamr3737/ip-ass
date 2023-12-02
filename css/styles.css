@@ -13,13 +13,21 @@
     --main-color: #fd4646;
     --text-color: black;
     --bg-color: #fff;
+    --rand-color:black;
 }
 body{
     color: var(--text-color);
 }
+.random{
+  display: flex;
+  justify-content: center;
+  background: var(--rand-color);
+  width: 100%;
+  color: antiquewhite;
+}
 .upper-header{
     display: grid;
-    background-color: black;
+    background-color:black;
     color: white;
     text-transform: uppercase;
     width: 100%;
@@ -59,8 +67,7 @@ header{
     
 }
 .navbar-scrolled{
-  background: black
-  
+  background: black;
 }
 .nav_links-scrolled{
   cursor: pointer;
@@ -484,6 +491,7 @@ font-size: 2.5em;
   background: url("../pictures/careersbg.jpg");
   height: 100vh;
 }
+
 .box{
   display: flex;
   flex-direction: row;
@@ -607,10 +615,14 @@ select{
   grid-template-columns: 80% 20%;
   margin-bottom: 10%;
 }
+.abbg{
+  background: url("../pictures/abbg.jpg");
+}
 .abside{
   background-color: rgb(223, 218, 218);
   float: left;
   margin: 1%;
+  margin-bottom: 0;
   width: 20%;
   
 }
@@ -624,4 +636,93 @@ select{
 .abpar{
   text-align: justify;
   text-justify: inter-word;
+}
+.absec{
+  margin-left: 4%;
+}
+/*mission*/
+.missionp{
+  background: url("../pictures/missionbg.jpg");
+}
+.miscontainer{
+margin: 5%;
+text-align: justify;
+}
+.videoplayer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4%;
+}
+/*our story*/
+.ourstoryp{
+  background: url("../pictures/ourbg.jpg");
+}
+.ourcontainer{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  
+}
+.oursec{
+  margin: 5%;
+  text-align: justify;
+  display: flex;
+}
+/*Vision*/
+.visionp{
+background: url("../pictures/visionbg.jpg");
+}
+.oursec img{
+ width: 100%;
+}
+/*Login signup*/
+.sign body {
+  font-family: Arial, sans-serif;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-form, .signup-form {
+  margin: 50px;
+  padding: 30px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+}
+
+.form-label {
+  display: block;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.form-button {
+  display: block;
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color:#0087ca ;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.form-button:hover {
+  background-color: #58b4e2;
+}
+.show-password-checkbox {
+  margin-top: 10px;
 }

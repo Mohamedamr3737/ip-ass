@@ -1,5 +1,17 @@
 var x=document.querySelector(".change");
 let shopButton=document.querySelector("#shopnow");
+function generateRandomColor() {
+   console.log("used");
+   const randomRed = Math.floor(Math.random() * 256);
+   const randomGreen = Math.floor(Math.random() * 256);
+   const randomBlue = Math.floor(Math.random() * 256);
+   const redHex = randomRed.toString(16).padStart(2, '0');
+   const greenHex = randomGreen.toString(16).padStart(2, '0');
+   const blueHex = randomBlue.toString(16).padStart(2, '0');
+   const randomColor = `#${redHex}${greenHex}${blueHex}`;
+   document.getElementById('randomColor').textContent = `Random Color: ${randomColor}`;
+   document.documentElement.style.setProperty('--rand-color', randomColor);
+};
         window.addEventListener("scroll",function()
         {
             if(window.scrollY>=100)
@@ -19,13 +31,17 @@ shopButton.addEventListener("click",()=>{
 let cartIcon =document.querySelector("#cart-bag");
 let cart= document.querySelector(".cart");
 let closeCart=document.querySelector("#close-cart");
+if(cartIcon){
+   cartIcon.addEventListener("click",()=>{
+      cart.classList.add("active");
+      });
+};
+if(closeCart){
+   closeCart.addEventListener("click",()=>{
+      cart.classList.remove("active");
+      });
+};
 
-cartIcon.addEventListener("click",()=>{
-cart.classList.add("active");
-});
-closeCart.addEventListener("click",()=>{
-cart.classList.remove("active");
-});
 if (document.readyState=="loading"){
    document.addEventListener("DOMContentLoaded",ready);
 }
@@ -51,8 +67,10 @@ function ready(){
       var button=addCart[i];
       button.addEventListener("click",addCartClicked);
    }
-
+if(cartIcon){
    document.getElementsByClassName("btn-buy")[0].addEventListener("click",buyButtonClicked);
+};
+   
 
 }
 function buyButtonClicked(){
@@ -132,4 +150,89 @@ function updatetotal(){
       document.getElementsByClassName("total-price")[0].innerText="$"+total;
       document.getElementById("total-items-display").innerText=""+totalItems;
    
+};
+
+var shopnowbtn = document.getElementById("shopnow");
+if(shopnowbtn){
+   shopnowbtn.addEventListener('click', ()=> {
+     scrollToElement("shopsection");
+   });
+};
+
+var applynowbtn=document.getElementById("applynow");
+if(applynowbtn){
+   applynowbtn.addEventListener('click',()=>{
+      scrollToElement("formstart");
+   });
+};
+
+var discoverbtn=document.getElementById("discover");
+if(discoverbtn){
+   discoverbtn.addEventListener('click',()=>{
+      scrollToElement("discoversection");
+   });
+};
+
+var discovermbtn=document.getElementById("discoverm");
+if(discovermbtn){
+   discovermbtn.addEventListener('click',()=>{
+      scrollToElement("discoverhead");
+   });
+};
+
+var discoverobtn=document.getElementById("discoverour");
+if(discoverobtn){
+   discoverobtn.addEventListener('click',()=>{
+      scrollToElement("discoverourhead");
+   });
+};
+
+ function scrollToElement(elementId) {
+   var element = document.getElementById(elementId);
+   if (element) {
+     // Scroll to the element
+     element.scrollIntoView({ behavior: 'smooth' });
+   };
+ };
+
+var applysubmit =document.getElementById("Applyform");
+if(applysubmit){
+applysubmit.addEventListener('click',()=>{
+alert("Submitted");
+});
+};
+function login() {
+   var username = document.getElementById('loginUsername').value;
+   var password = document.getElementById('Password').value;
+
+   console.log('Login:', username, password);
+   alert('Login:  '+ "username: "+ username+"  "+"password: "+ password);
+   window.location.href = 'index.html';
 }
+
+function signup() {
+   var username = document.getElementById('signupUsername').value;
+   var password = document.getElementById('Password').value;
+   var passwordr = document.getElementById('Passwordr').value;
+   if(password==passwordr){
+      console.log('Sign Up:', username, password, passwordr);
+      alert('Login:  '+ "username: "+ username+"  "+"password: "+ password+"  "+"Re-password: "+ passwordr);
+      window.location.href = 'login.html';
+   }else{
+      alert("Password mismatch");
+   }
+   
+};
+
+var showPasswordCheckbox = document.getElementById('showPassword');
+var passwordInput = document.getElementById('Password');
+var passre=document.getElementById("Passwordr");
+
+if(showPasswordCheckbox){
+   showPasswordCheckbox.addEventListener('change', ()=> {
+      passwordInput.type = showPasswordCheckbox.checked ? 'text' : 'password';
+      passre.type = showPasswordCheckbox.checked ? 'text' : 'password';
+  });
+};
+
+
