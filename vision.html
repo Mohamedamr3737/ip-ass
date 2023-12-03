@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>E-commerce website</title>
+        <link rel="icon" type="image/png" href="./pictures/logo.png">
+        <title>Vision</title>
         <link rel="stylesheet" href="./css/styles.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
@@ -17,12 +18,13 @@
             <p id="randomColor">Random Color: #000000<p>
         </div>
         <div class="upper-header">
+            
             <div class="uppar">
                 <p >Free delivery on orders above 50$</p>
             </div>  
             <div class="log">
-                <a href="">Login</a>
-                <a href="">Sign Up</a>
+                <a href="./login.html">Login</a>
+                <a href="./signup.html">Sign Up</a>
             </div>
         </div>
         <nav class="navbar change">
@@ -34,9 +36,14 @@
                 <li class="dropdown">
                     <a href="./aboutus.html" class="hover-underline-animation">▼ About us</a>
                     <ul class="dropdownMenu">
-                        <li class="drop-options"><a href="./ourstory.html" class="hover-underline-animation">Our story</a></li>
-                        <li class="drop-options"><a href="./mission.html" class="hover-underline-animation">Mission</a></li>
-                        <li class="drop-options"><a href="./vision.html" class="hover-underline-animation">Vision</a></li>
+                        <li class="drop-options dropdown-trigger dropdowns"><a href="./ourstory.html" class="hover-underline-animation">▼ Story</a>
+                            <div class="dropdowns">
+                                <div class="dropdown-content dropdown-content-right dropdownMenu">
+                                  <a href="./mission.html" class="dropdown-item hover-underline-animation">Mission</a>
+                                  <a href="./vision.html" class="dropdown-item hover-underline-animation">Vision</a>
+                                </div>
+                              </div>
+                        </li>
                     </ul>
                 </li>
                 <li><i class="bx bx bx-shopping-bag" id="cart-bag"></i><span id="total-items-display" class="cart-number">0</span></li>

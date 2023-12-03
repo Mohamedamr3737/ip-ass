@@ -726,3 +726,37 @@ background: url("../pictures/visionbg.jpg");
 .show-password-checkbox {
   margin-top: 10px;
 }
+.dropdowns {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-trigger {
+  color: black;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-item {
+  padding: 10px;
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdowns:hover .dropdown-content {
+  display: block;
+}
+
+
+.dropdown-content-right {
+  right: 2;
+}
